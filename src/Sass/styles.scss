@@ -1,0 +1,46 @@
+@import 'variables';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+//clases personalizadas
+.bg-rosa{
+    background-color: $bg;
+}
+
+//contenedor para las cards
+.cardsContainer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+    
+    @media screen and (max-width: 400px) {
+      gap: 0.5rem; 
+      display: flex;
+      flex-direction: column;
+      max-width: 80%;
+    }
+}
+
+//fondo para las cards y su titulo
+.cardsBg{
+    background-color: $bg;
+}
+
+//parallax efect
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/1.jpg');
+    
+    @media screen and (max-width: 400px) {
+        background-attachment: scroll;
+        background-color: $bg;
+        background-image: none;
+    }
+}
+
+
